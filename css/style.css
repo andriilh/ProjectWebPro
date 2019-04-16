@@ -13,3 +13,7 @@ body {
    top: auto;
    bottom: 100%;
 }
+
+.navbar-right {
+   justify-content: flex-end;
+}
