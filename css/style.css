@@ -1,0 +1,19 @@
+body {
+   margin: 0;
+   padding: 0;
+}
+
+.navbar {
+   width: 100%;
+   background-color: rgba(251, 169, 169, 0.911);
+}
+
+.menu li {
+   display: inline-block;
+   position: relative;
+}
+
+.menu li a {
+   text-decoration: none;
+   
+}
