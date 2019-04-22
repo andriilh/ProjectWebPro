@@ -2,10 +2,11 @@
 body {
    padding: 0;
    margin: 0;
-   font-family: Montserrat;
+   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
 }
 
-a {
+a,
+.a {
    text-decoration: none;
 }
 
@@ -95,12 +96,6 @@ a {
    font-weight: bolder;
    color: tomato;
    font-size: 22px;
-}
-
-div::after {
-   content: "";
-   clear: both;
-   display: table;
 }
 
 .container {
@@ -207,9 +202,92 @@ div::after {
    border-bottom: 3px solid black;
 }
 
+.sosmed i {
+   font-size: 25px;
+   color: #53b1c5;
+}
+
+
+/* main */
+.main {
+   padding: 20px;
+   width: 70%;
+   ;
+   box-sizing: border-box;
+   float: left;
+}
+
+.ket-judul {
+   font-size: 13px;
+   margin-top: -27px;
+}
+
+.foto-berita {
+   position: relative;
+   border-radius: 20px;
+   height: 400px;
+   background-color: #45c48b;
+   width: 100%;
+   box-shadow: 2px 5px 5px rgba(106, 59, 181, 0.5);
+}
+
+.foto-berita1 {
+   background-image: url(../img/IMG_5235.jpg);
+   background-size: cover;
+}
+
+.foto-berita2 {
+   background-image: url(../img/2865606287.jpg);
+   background-size: cover;
+}
+
+.foto-berita3 {
+   background-image: url(../img/Man-City-v-Man-Utd.png);
+   background-size: cover;
+}
+
+.ket-gambar p {
+   margin-top: 420px;
+   font-style: italic;
+   font-size: 12px;
+   text-align: center;
+}
+
+/* sidebar */
+.sidebar {
+   width: 300px;
+   float: right;
+   padding: 20px;
+}
+
+.berita-side {
+   width: 100%;
+}
+
+.berita-side p {
+   padding-left: 5px;
+   font-size: 13px;
+}
+
+.berita-side img {
+   border-radius: 5px;
+   width: 100px;
+   height: 75px;
+   float: left;
+   padding-right: 5px;
+}
+
+.sumber:hover a {
+   color: #06858C;
+}
+
 /* text-color pallete */
 .text-grey {
    color: lightslategrey;
+}
+
+.text-hitam {
+   color: #131212;
 }
 
 /* Text Properties and fonts*/
@@ -219,6 +297,11 @@ div::after {
 
 .font-bold {
    font-weight: bold;
+}
+
+.font-larger {
+   font-size: larger;
+   font-size: 30px;
 }
 
 
@@ -241,4 +324,22 @@ div::after {
 .kosong {
    position: relative;
    height: 100px;
+   margin-top: 50px;
+}
+
+/* Micro Clearfix */
+.cf:before,
+.cf:after {
+   content: " ";
+   /* 1 */
+   display: table;
+   /* 2 */
+}
+
+.cf:after {
+   clear: both;
+}
+
+.cf {
+   *zoom: 1;
 }
