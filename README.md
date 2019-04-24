@@ -7,5 +7,11 @@ Project Besar MK Web Programming
    - International (timnas)
    - Europe and Indonesia Competitions
  
- #
- # Andri Ilham
+ 
+ # Membuat Navbar fix
+ ```
+ .navbar-fixed {
+   position: fixed;
+   z-index: 99999; /* posisi kedepan mejadi lebih depan */
+ }
+ ```
