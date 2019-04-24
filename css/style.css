@@ -19,7 +19,7 @@ a,
 .nav-fix {
    background-color: #06858C;
    height: 50px;
-   box-shadow: 1px 5px 5px rgba(3, 0, 0, 0.5);
+   box-shadow: 0 5px 5px rgba(3, 0, 0, 0.5);
    position: relative;
    top: 0;
    left: 0;
@@ -40,7 +40,6 @@ a,
 
 .nav-fix ul {
    margin-top: 0;
-
 }
 
 .nav-fix ul li {
@@ -48,6 +47,7 @@ a,
    display: inline-block;
    position: relative;
    padding: 15px 20px;
+   transition: .3s;
 }
 
 .nav-fix ul li:hover {
@@ -58,10 +58,6 @@ a,
    text-decoration: none;
    color: white;
    display: block;
-}
-
-.nav-fix li a:hover {
-   transition: .3s ease-in-out;
 }
 
 .nav-fix ul ul {
@@ -80,6 +76,7 @@ a,
 .nav-fix ul li ul li {
    width: 100%;
    margin-left: -40px;
+   transition: none;
 }
 
 .nav-fix .logo a {
@@ -99,6 +96,7 @@ a,
 }
 
 .container {
+   position: relative;
    width: 85%;
    margin: auto;
 }
@@ -110,6 +108,10 @@ a,
    height: 400px;
    background-size: cover;
    padding-bottom: 25px;
+}
+
+.wellcome {
+   height: 100%;
 }
 
 .wellcome p,
@@ -124,7 +126,7 @@ a,
 .wellcome h2 {
    font-weight: bolder;
    font-size: 100px;
-   top: 35%;
+   top: 30%;
 }
 
 .wellcome p {
@@ -208,6 +210,7 @@ a,
 }
 
 
+
 /* main */
 .main {
    padding: 20px;
@@ -281,6 +284,20 @@ a,
    color: #06858C;
 }
 
+.menu-hero {
+   position: relative;
+   height: 60px;
+   width: 100%;
+   /* background-color: #45c48b; */
+   top: 75%;
+   display: grid;
+   grid-template-columns: 180px 180px 180px 180px;
+}
+
+.men:hover {
+   text-shadow: 1px 1px 3px rgba(0,0,0,.5);
+}
+
 /* text-color pallete */
 .text-grey {
    color: lightslategrey;
@@ -288,6 +305,10 @@ a,
 
 .text-hitam {
    color: #131212;
+}
+
+.text-white {
+   color: white;
 }
 
 /* Text Properties and fonts*/
@@ -303,6 +324,7 @@ a,
    font-size: larger;
    font-size: 30px;
 }
+
 
 
 
