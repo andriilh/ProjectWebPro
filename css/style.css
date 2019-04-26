@@ -225,6 +225,8 @@ a,
    margin-top: -27px;
 }
 
+
+/* foto berita */
 .foto-berita {
    position: relative;
    border-radius: 20px;
@@ -246,6 +248,16 @@ a,
 
 .foto-berita3 {
    background-image: url(../img/Man-City-v-Man-Utd.png);
+   background-size: cover;
+}
+
+.foto-berita4 {
+   background-image: url(../img/eibar-vs-atletico-madrid.jpg);
+   background-size: cover;
+}
+
+.foto-berita5 {
+   background-image: url(../img/getafereal250417.jpg);
    background-size: cover;
 }
 
