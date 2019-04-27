@@ -94,9 +94,88 @@
 
    <div class="container">
       <!-- main -->
-      <div class="main">
+      <div class="main main-klasemen">
          <h2 class="font-sanspro">Klasemen Laliga 2019-2019</h2>
-         <div class="th"></div>
+         <div class="tahan"></div>
+         <!-- Tabel -->
+         <table class="klasemen">
+            <tr>
+               <th>No.</th>
+               <th>Klub</th>
+               <th>P</th>
+               <th>B</th>
+               <th>M</th>
+               <th>S</th>
+               <th>K</th>
+               <th>MG</th>
+               <th>KG</th>
+               <th>SG</th>
+            </tr>
+            <tr>
+               <td>1</td>
+               <td>FC Barcelona</td>
+               <td>83</td>
+               <td>35</td>
+               <td>24</td>
+               <td>9</td>
+               <td>2</td>
+               <td>85</td>
+               <td>32</td>
+               <td>53</td>
+            </tr>
+            <tr>
+               <td>2</td>
+               <td>Atletico Madrid</td>
+               <td>74</td>
+               <td>35</td>
+               <td>22</td>
+               <td>8</td>
+               <td>5</td>
+               <td>52</td>
+               <td>23</td>
+               <td>29</td>
+            </tr>
+            <tr>
+               <td>3</td>
+               <td>Real Madrid</td>
+               <td>65</td>
+               <td>34</td>
+               <td>20</td>
+               <td>5</td>
+               <td>9</td>
+               <td>59</td>
+               <td>38</td>
+               <td>21</td>
+            </tr>
+            <tr>
+               <td>4</td>
+               <td>Levante</td>
+               <td>55</td>
+               <td>34</td>
+               <td>14</td>
+               <td>13</td>
+               <td>7</td>
+               <td>43</td>
+               <td>29</td>
+               <td>14</td>
+            </tr>
+         </table>
+         <!-- End of Table -->
+         <div class="kotak-ket-tabel">
+            <p class="ket-tabel"><span>P</span> Points</p>
+            <p class="ket-tabel"><span>B</span> Bermain</p>
+            <p class="ket-tabel"><span>M</span> Menang</p>
+            <p class="ket-tabel"><span>S</span> Seri</p>
+            <p class="ket-tabel"><span>K</span> Kalah</p>
+            <p class="ket-tabel"><span>MG</span> Memasukkan Goal</p>
+            <p class="ket-tabel"><span>KG</span> Kemasukan Goal</p>
+            <p class="ket-tabel"><span>SG</span> Selisih Goal</p>
+         </div>
+         <div class="kotak-ket-tabel2">
+           <ul>
+              <li>Group UCL Musim Berikutnya</li>
+           </ul>
+         </div>
       </div>
       <!-- end of main -->
 
@@ -106,6 +185,13 @@
       </div>
       <!-- end of side bar -->
    </div>
+
+   <script>
+      const width = 756.141;
+      var percent = width * (35 / 100);
+      var bagi = (width - percent) / 9;
+      var persen = (bagi / width) * 100;
+   </script>
 
 </body>
 

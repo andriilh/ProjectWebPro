@@ -221,6 +221,10 @@ a,
   float: left;
 }
 
+.main-klasemen {
+  width: 80%;
+}
+
 .ket-judul {
   font-size: 13px;
   margin-top: -27px;
@@ -359,6 +363,140 @@ a,
   position: relative;
   height: 100px;
   margin-top: 50px;
+}
+
+.klasemen {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #45c48b;
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.klasemen tr:nth-child(1) {
+  width: 7.22%;
+  height: 25px;
+  text-align: center;
+  background-color: #1a794e;
+  height: 35px;
+  border-bottom: 4px solid #ffffffe7;
+}
+
+.klasemen tr:nth-child(2),
+.klasemen tr:nth-child(3),
+.klasemen tr:nth-child(4),
+.klasemen tr:nth-child(5) {
+  border-left: 7px solid #4285f4;
+}
+
+.klasemen tr:hover td:nth-child(1),
+.klasemen tr:hover td:nth-child(2),
+.klasemen tr:hover td:nth-child(3),
+.klasemen tr:hover td:nth-child(4),
+.klasemen tr:hover td:nth-child(5),
+.klasemen tr:hover td:nth-child(6),
+.klasemen tr:hover td:nth-child(7),
+.klasemen tr:hover td:nth-child(8),
+.klasemen tr:hover td:nth-child(9),
+.klasemen tr:hover td:nth-child(10) {
+  background-color: #1bd8af;
+  cursor: pointer;
+  color: white;
+  font-weight: bolder;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.klasemen td:nth-child(1) {
+  width: 7.22%;
+  height: 25px;
+  text-align: center;
+  background-color: #84f0bfe1;
+  border-bottom: 1px solid black;
+}
+
+.klasemen td:nth-child(2) {
+  border-bottom: 1px solid black;
+}
+
+.klasemen td:nth-child(3) {
+  width: 7.22%;
+  height: 25px;
+  text-align: center;
+  background-color: #209460;
+  border-bottom: 1px solid black;
+}
+
+.klasemen td:nth-child(4) {
+  width: 7.22%;
+  height: 25px;
+  text-align: center;
+  background-color: #84f0bfe1;
+  border-bottom: 1px solid black;
+}
+
+.klasemen td:nth-child(5) {
+  width: 7.22%;
+  height: 25px;
+  text-align: center;
+  background-color: #209460;
+  border-bottom: 1px solid black;
+}
+
+.klasemen td:nth-child(6) {
+  width: 7.22%;
+  height: 25px;
+  text-align: center;
+  background-color: #84f0bfe1;
+  border-bottom: 1px solid black;
+}
+
+.klasemen td:nth-child(7) {
+  width: 7.22%;
+  height: 25px;
+  text-align: center;
+  background-color: #209460;
+  border-bottom: 1px solid black;
+}
+
+.klasemen td:nth-child(8) {
+  width: 7.22%;
+  height: 25px;
+  text-align: center;
+  background-color: #84f0bfe1;
+  border-bottom: 1px solid black;
+}
+
+.klasemen td:nth-child(9) {
+  width: 7.22%;
+  height: 25px;
+  text-align: center;
+  background-color: #209460;
+  border-bottom: 1px solid black;
+}
+
+.klasemen td:nth-child(10) {
+  width: 7.22%;
+  height: 25px;
+  text-align: center;
+  background-color: #84f0bfe1;
+  border-bottom: 1px solid black;
+}
+
+.kotak-ket-tabel .ket-tabel {
+  font-weight: lighter;
+  font-size: smaller;
+  text-align: left;
+}
+
+.kotak-ket-tabel .ket-tabel span {
+  display: inline-block;
+  height: 25px;
+  width: 30px;
+  font-size: larger;
+  font-weight: 800;
+  text-align: center;
+  margin-right: 5px;
 }
 
 /* Micro Clearfix */

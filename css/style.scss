@@ -15,6 +15,7 @@ a,
    position: fixed;
    z-index: 99999;
 }
+
 /* tambahan */
 
 .nav-fix {
@@ -216,9 +217,12 @@ a,
 .main {
    padding: 20px;
    width: 70%;
-   ;
    box-sizing: border-box;
    float: left;
+}
+
+.main-klasemen {
+   width: 80%;
 }
 
 .ket-judul {
@@ -308,7 +312,7 @@ a,
 }
 
 .men:hover {
-   text-shadow: 1px 1px 3px rgba(0,0,0,.5);
+   text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
 }
 
 /* text-color pallete */
@@ -362,6 +366,129 @@ a,
    margin-top: 50px;
 }
 
+$bbottom: 4px solid #ffffffe7;
+$lebar: 7.22%;
+$cl-0: transparent;
+$cl-1: #84f0bfe1;
+$cl-2: #209460;
+$cl-3: #1a794e;
+
+@mixin propert($warna) {
+   width: $lebar;
+   height: 25px;
+   text-align: center;
+   background-color: $warna;
+}
+
+@mixin propert-td($warna) {
+   @include propert($warna);
+   border-bottom: 1px solid black;
+}
+
+.klasemen {
+   border-collapse: collapse;
+   width: 100%;
+   background-color: #45c48b;
+   box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
+
+   tr:nth-child(1) {
+      @include propert($cl-3);
+      height: 35px;
+      border-bottom: $bbottom;
+   }
+
+   tr:nth-child(2),
+   tr:nth-child(3),
+   tr:nth-child(4),
+   tr:nth-child(5) {
+      border-left: 7px solid #4285f4;
+   }
+
+   tr:hover {
+
+      td:nth-child(1),
+      td:nth-child(2),
+      td:nth-child(3),
+      td:nth-child(4),
+      td:nth-child(5),
+      td:nth-child(6),
+      td:nth-child(7),
+      td:nth-child(8),
+      td:nth-child(9),
+      td:nth-child(10) {
+         background-color: rgb(27, 216, 175);
+         cursor: pointer;
+         color: white;
+         font-weight: bolder;
+         transition: .3s ease;
+      }
+   }
+
+
+
+   td:nth-child(1) {
+      @include propert-td($cl-1);
+   }
+
+   td:nth-child(2) {
+      border-bottom: 1px solid black;
+   }
+
+   td:nth-child(3) {
+      @include propert-td($cl-2);
+   }
+
+   td:nth-child(4) {
+      @include propert-td($cl-1);
+   }
+
+   td:nth-child(5) {
+      @include propert-td($cl-2);
+   }
+
+   td:nth-child(6) {
+      @include propert-td($cl-1);
+   }
+
+   td:nth-child(7) {
+      @include propert-td($cl-2);
+   }
+
+   td:nth-child(8) {
+      @include propert-td($cl-1);
+   }
+
+   td:nth-child(9) {
+      @include propert-td($cl-2);
+   }
+
+   td:nth-child(10) {
+      @include propert-td($cl-1);
+   }
+}
+
+.kotak-ket-tabel {
+
+   // position: absolute;
+   // float: left;
+   // border: 1px solid black;
+   .ket-tabel {
+      font-weight: lighter;
+      font-size: smaller;
+      text-align: left;
+
+      span {
+         display: inline-block;
+         height: 25px;
+         width: 30px;
+         font-size: larger;
+         font-weight: 800;
+         text-align: center;
+         margin-right: 5px;
+      }
+   }
+
+}
 
 
 /* Micro Clearfix */
